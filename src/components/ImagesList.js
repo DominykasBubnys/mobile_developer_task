@@ -4,7 +4,7 @@ import DogUrl from '../dog_urls.json'
 import ImagesItem from './ImagesItem'
 import classes from '../styles/ListStyles'
 
-const ImagesList = () => {
+const ImagesList = ({ navigation }) => {
   const URLArray = DogUrl.urls ? [...DogUrl.urls.slice(0, 15)] : []
 
   return (
@@ -12,7 +12,7 @@ const ImagesList = () => {
       <Text style={classes.header}>Gallery</Text>
       <View style={classes.list_container}>
         {URLArray.map((url) => (
-          <ImagesItem key={Math.random()} url={url} />
+          <ImagesItem navigation={navigation} key={Math.random()} url={url} />
         ))}
       </View>
     </View>

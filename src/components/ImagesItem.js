@@ -2,9 +2,11 @@ import React from 'react'
 import { TouchableOpacity, Text, ImageBackground } from 'react-native'
 import classes from '../styles/ItemStyles'
 
-const ImagesItem = ({ url }) => {
+const ImagesItem = ({ url, navigation }) => {
   const imagePressHandler = () => {
-    // navigating to another screen..
+    navigation.navigate('Tapped', {
+      url
+    })
   }
 
   return (
@@ -15,7 +17,7 @@ const ImagesItem = ({ url }) => {
         }}
         style={classes.item}
       >
-        <Text style={classes.text}>{'Suma'}</Text>
+        <Text style={classes.text}>{'Sum'}</Text>
       </ImageBackground>
     </TouchableOpacity>
   )

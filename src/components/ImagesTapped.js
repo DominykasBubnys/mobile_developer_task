@@ -1,7 +1,9 @@
 import React from 'react'
 import { View, Text } from 'react-native'
 
-const ImagesItem = () => {
+const ImagesItem = ({ route, navigation }) => {
+  console.log('props: ', route)
+
   return (
     <View>
       <Text>Component</Text>
