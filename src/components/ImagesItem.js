@@ -1,11 +1,23 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import { TouchableOpacity, Text, ImageBackground } from 'react-native'
+import classes from '../styles/ItemStyles'
 
 const ImagesItem = ({ url }) => {
+  const imagePressHandler = () => {
+    // navigating to another screen..
+  }
+
   return (
-    <View>
-      <Text>{url}</Text>
-    </View>
+    <TouchableOpacity onPress={imagePressHandler} style={classes.container}>
+      <ImageBackground
+        source={{
+          uri: url
+        }}
+        style={classes.item}
+      >
+        <Text style={classes.text}>{'Suma'}</Text>
+      </ImageBackground>
+    </TouchableOpacity>
   )
 }
 
