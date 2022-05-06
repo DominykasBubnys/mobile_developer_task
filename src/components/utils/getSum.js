@@ -1,5 +1,9 @@
+const SumNumbers = (str) => [...str].reduce((sum, char) => sum + +char, 0)
+
 const getSum = (url) => {
-  return 0
+  const splitStr = url.match(/\d/g)
+
+  return SumNumbers(splitStr)
 }
 
 export default getSum

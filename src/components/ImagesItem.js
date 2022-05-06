@@ -1,5 +1,6 @@
 import React from 'react'
 import { TouchableOpacity, Text, ImageBackground } from 'react-native'
+import getSum from '../components/utils/getSum'
 import classes from '../styles/ItemStyles'
 
 const ImagesItem = ({ url, navigation }) => {
@@ -9,6 +10,8 @@ const ImagesItem = ({ url, navigation }) => {
     })
   }
 
+  const sum = getSum(url)
+
   return (
     <TouchableOpacity onPress={imagePressHandler} style={classes.container}>
       <ImageBackground
@@ -17,7 +20,7 @@ const ImagesItem = ({ url, navigation }) => {
         }}
         style={classes.item}
       >
-        <Text style={classes.text}>{'Sum'}</Text>
+        <Text style={classes.text}>{sum}</Text>
       </ImageBackground>
     </TouchableOpacity>
   )

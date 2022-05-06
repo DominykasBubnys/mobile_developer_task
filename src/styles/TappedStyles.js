@@ -8,10 +8,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'black'
   },
   button: {
-    width: '80%',
+    width: '70%',
     padding: 10,
-    backgroundColor: 'orange',
-    margin: 10
+    backgroundColor: 'rgba(39, 14, 27, 0.85)',
+    margin: 10,
+    borderRadius: 30
   },
   text: {
     color: '#fff',
