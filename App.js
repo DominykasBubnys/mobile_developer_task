@@ -1,6 +1,6 @@
 import React from 'react'
-import ImagesList from './src/components/ImagesList'
+import Navigation from './src/components/navigation'
 
-const App = () => <ImagesList />
+const App = () => <Navigation />
 
 export default App
