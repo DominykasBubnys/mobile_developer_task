@@ -1,12 +1,6 @@
 import React from 'react'
-import { View, Text } from 'react-native'
+import ImagesList from './src/components/ImagesList'
 
-const App = () => {
-  return (
-    <View>
-      <Text>Hello from react-native</Text>
-    </View>
-  )
-}
+const App = () => <ImagesList />
 
 export default App
