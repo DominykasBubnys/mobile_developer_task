@@ -15,7 +15,8 @@ const style = StyleSheet.create({
     height: '100%',
     display: 'flex',
     alignItems: 'center',
-    justifyContent: 'center'
+    justifyContent: 'center',
+    opacity: 0.8
   },
 
   text: {

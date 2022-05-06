@@ -6,26 +6,28 @@ const style = StyleSheet.create({
     width: '100%',
     padding: 0,
     margin: 0,
-    backgroundColor: 'black'
+    backgroundColor: 'black',
+    overflow: 'hidden'
   },
 
   header: {
-    borderColor: 'red',
-    borderWidth: 2,
     color: 'white',
     textAlign: 'center',
     fontSize: 40,
     margin: 20,
-    fontStyle: 'italic'
+    fontStyle: 'italic',
+    letterSpacing: 4
   },
 
   list_container: {
-    width: '90%',
+    width: '94%',
     marginLeft: 'auto',
     marginRight: 'auto',
     display: 'flex',
+    flexDirection: 'row',
+    flexWrap: 'wrap',
     justifyContent: 'space-between',
-    backgroundColor: 'red',
+    backgroundColor: 'rgba(72, 41, 57, 0.3)',
     padding: 10,
     borderRadius: 30,
     overflow: 'hidden'
